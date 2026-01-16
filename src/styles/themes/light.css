@@ -1,0 +1,62 @@
+/* Light theme tokens. Applied when an ancestor sets [data-theme="light"] (default) */
+[data-theme="light"] {
+  /* --- BRAND COLORS: BikinSoftware Identity --- */
+
+  /* UTAMA: Royal Blue (Kesan: Tech, Trust, Speed) */
+  --accent: #2563eb; /* Tailwind Blue 600 */
+  --accent-dark: #1d4ed8; /* Tailwind Blue 700 (untuk hover) */
+  --accent-rgb: 37, 99, 235;
+
+  /* SEKUNDER: Amber (Untuk variasi atau tombol CTA sekunder) */
+  --secondary: #f59e0b; /* Tailwind Amber 500 */
+  --secondary-foreground: #ffffff; /* Teks putih agar kontras di atas oranye */
+
+  /* --- TYPOGRAPHY COLORS: Slate Palette --- */
+  --black: 15, 23, 42; /* Slate 900 (Hampir hitam, tapi ada nuansa biru dikit) */
+  --gray: 100, 116, 139; /* Slate 500 (Abu-abu modern) */
+  --gray-light: 226, 232, 240; /* Slate 200 */
+  --gray-dark: 30, 41, 59; /* Slate 800 */
+
+  /* --- BACKGROUNDS & SURFACES --- */
+  --background: #ffffff;
+  --foreground: #0f172a; /* Slate 900 */
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+  --popover: #ffffff;
+  --popover-foreground: #0f172a;
+
+  /* --- COMPONENT MAPPINGS --- */
+  --primary: var(--accent); /* Menggunakan Royal Blue sebagai warna utama */
+  --primary-foreground: #ffffff; /* Teks putih di atas tombol biru */
+
+  --muted: #f1f5f9; /* Slate 100 (Background tipis) */
+  --muted-foreground: #64748b; /* Slate 500 */
+  --accent-foreground: #ffffff;
+
+  /* Semantic Color Tokens for components */
+  --color-text-primary: rgb(var(--black));
+  --color-text-secondary: rgb(var(--gray-dark));
+  --color-text-muted: rgb(var(--gray));
+
+  --color-bg-primary: var(--background);
+  --color-bg-secondary: #f8fafc; /* Slate 50 */
+  --color-bg-tertiary: #f1f5f9; /* Slate 100 */
+
+  /* Borders */
+  --color-border: #e2e8f0; /* Slate 200 */
+  --color-border-light: #f1f5f9; /* Slate 100 */
+
+  /* Utility Colors (Tetap standar tapi disesuaikan dikit) */
+  --info: #0ea5e9; /* Sky 500 */
+  --info-foreground: #ffffff;
+  --success: #22c55e; /* Green 500 */
+  --success-foreground: #ffffff;
+  --warning: #f59e0b; /* Amber 500 */
+  --warning-foreground: #ffffff;
+  --error: #ef4444; /* Red 500 */
+  --error-foreground: #ffffff;
+
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --outline: var(--accent);
+}

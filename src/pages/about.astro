@@ -1,0 +1,31 @@
+---
+import Layout from "../layouts/BlogPost.astro";
+import GlowLineSeparator from "@/components/ui/separator/GlowLineSeparator.astro";
+const pageTitle = "About Me";
+const pageDescription = "Learn more about Our background.";
+---
+
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  pubDate={new Date()}
+  showHeader={false}
+>
+  <p>
+    BikinSoftware hadir untuk menjembatani kesenjangan antara ide bisnis dan
+    eksekusi teknis. Misi kami sederhana: mengubah proses manual yang lambat
+    menjadi sistem digital yang otomatis dan cerdas.
+  </p>
+  <p>
+    Kami menggabungkan kecepatan pengembangan aplikasi modern dengan kekuatan
+    data dan AI. Mulai dari Landing Page yang mendongkrak konversi hingga sistem
+    otomatisasi (n8n) yang menghemat waktu operasional tim Anda.
+  </p>
+  <p>
+    Dengan pendekatan agile dan transparan, BikinSoftware membantu bisnis Anda
+    beradaptasi lebih cepat di era digital, tanpa kerumitan teknis yang
+    memusingkan.
+  </p>
+
+  <GlowLineSeparator />
+</Layout>
