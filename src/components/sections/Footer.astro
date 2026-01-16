@@ -56,8 +56,12 @@ const inoreaderUrl = `https://www.inoreader.com/?add_feed=${feedUrl}`;
   <GlowLineSeparator />
   <footer class="bg-gray-900 text-white pt-16 mt-10 pb-4">
     <div class="container mx-auto w-full px-4m sm:px-6 lg:px-8">
-      <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12 max-w-7xl">
-        <div class="md:col-span-2 lg:col-span-2">
+      <div
+        class="grid px-4 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12 max-w-7xl"
+      >
+        <div
+          class="flex flex-col items-center md:justify-items-start md:items-start md:col-span-2 lg:col-span-2"
+        >
           <a
             href="/"
             class="flex items-center mb-6"
@@ -76,7 +80,7 @@ const inoreaderUrl = `https://www.inoreader.com/?add_feed=${feedUrl}`;
               >BikinSoftware</span
             >
           </a>
-          <p class="text-lg leading-6 text-slate-400 max-w-md text-left">
+          <p class="text-lg leading-6 text-slate-400 max-w-md md:text-left">
             Partner teknologi andalan untuk transformasi digital bisnis Anda.
             Kami menyediakan layanan pembuatan Fullstack Web, Landing Page
             performa tinggi, hingga Otomatisasi Sistem berbasis AI. Fokus kami
@@ -137,13 +141,11 @@ const inoreaderUrl = `https://www.inoreader.com/?add_feed=${feedUrl}`;
 
         {
           footerLinks.map((column) => (
-            <div>
-              <h3 class="text-left text-lg font-semibold mb-4">
-                {column.title}
-              </h3>
+            <div class="flex flex-col items-center md:justify-items-start">
+              <h3 class="text-lg font-semibold mb-4">{column.title}</h3>
               <ul>
                 {column.links.map((link) => (
-                  <li class="text-left  ">
+                  <li class="md:text-left">
                     <a
                       href={link.url}
                       class="no-underline text-lg text-gray-400 hover:text-[color:var(--accent)] transition-colors  "
